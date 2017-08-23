@@ -19,7 +19,7 @@ angular.module('shop', [] )
            }
             return $http({
                method:'Get',
-                url:'..app/data/phones.json'
+                url:'..data/phones.json'
             }).then(function successCallback(response){
                //this callback will be called asynchronously
                 //when the response is available
