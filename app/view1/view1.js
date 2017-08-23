@@ -9,6 +9,15 @@ angular.module('myApp.view1', ['ngRoute'])
   });
 }])
 
-.controller('View1Ctrl', [function() {
+.controller('View1Ctrl', ['$scope',function($scope) {
+$scope.kuku = "kuku";
+}])
+.controller('View1ACtrl', [function() {
+
+}])
+.controller('View1A1Ctrl', [function() {
+
+    }])
+.controller('View1BCtrl', [function() {
 
 }]);
