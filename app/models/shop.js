@@ -27,11 +27,9 @@ angular.module('shop', [] )
                 return items.map(function (item) {
                     return new Phones(item.title,item.text, item.color, item.price)
                 });
-
             },function errorCallback(response) {
                console.error(response);
-            })
-
+            });
         };
         return new Shop();
     }])
