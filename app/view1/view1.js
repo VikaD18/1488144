@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.view1', ['ngRoute'])
+angular.module('myApp.view1', ['ngRoute', 'shop'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/view1', {
@@ -9,15 +9,4 @@ angular.module('myApp.view1', ['ngRoute'])
   });
 }])
 
-.controller('View1Ctrl', ['$scope',function($scope) {
-$scope.kuku = "kuku";
-}])
-.controller('View1ACtrl', [function() {
-
-}])
-.controller('View1A1Ctrl', [function() {
-
-    }])
-.controller('View1BCtrl', [function() {
-
-}]);
+;
