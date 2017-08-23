@@ -19,7 +19,7 @@ angular.module('shop', [] )
            }
             return $http({
                method:'Get',
-                url:'..data/phones.json'
+                url:'/data/phones.json'
             }).then(function successCallback(response){
                //this callback will be called asynchronously
                 //when the response is available
@@ -33,7 +33,7 @@ angular.module('shop', [] )
         };
         return new Shop();
     }])
-    .factory('Phones', function() {
+    .factory('Phones', [function() {
    function Phones(title,text, color, price) {
 this.title=title;
 this.text=text;
@@ -41,4 +41,4 @@ this.color=color;
 this.price=price;
    }
    return Phones;
-});
+}]);
