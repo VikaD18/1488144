@@ -9,6 +9,8 @@ angular.module('myApp', [
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
-
-  $routeProvider.otherwise({redirectTo: '/view1'});
+    $routeProvider.when('/', {
+        template: 'kuku epta'
+    });
+  $routeProvider.otherwise({redirectTo: '/'});
 }]);
