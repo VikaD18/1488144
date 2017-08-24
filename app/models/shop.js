@@ -25,7 +25,7 @@ angular.module('shop', [] )
                 // when the response is available
                 items=response.data;
                 return items.map(function (item) {
-                    return new Phone(item.title,item.text, item.color, item.price)
+                    return new Phone(item.title,item.text, item.color, item.price, item.image)
                 });
             }, function errorCallback(response) {
                 // called asynchronously if an error occurs
@@ -38,11 +38,12 @@ angular.module('shop', [] )
     return new Shop();
     }])
     .factory('Phone', [function() {
-    function Phone(title,text,color, price) {
+    function Phone(title,text,color, price, image) {
         this.title=title;
         this.text=text;
         this.color=color;
         this.price=price;
+        this.image=image;
     }
     return Phone;
 }]);
