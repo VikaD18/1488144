@@ -4,27 +4,27 @@
     "title":"iPhone 6",
     "text":"хороший телефон",
     "color":"white",
-    "price":7500
+    "price":"7500"
   },
   {
 
     "title":"iPhone 4",
     "text":"хороший телефон",
     "color":"white",
-    "price":4500
+    "price":"4500"
   },
   {
 
     "title":"Samsung Salaxy S5",
     "text":"хороший телефон",
     "color":"white",
-    "price":7500
+    "price":"7500"
   },
   {
 
     "title":"Samsung Salaxy S8",
     "text":"хороший телефон",
     "color":"white",
-    "price":17500
+    "price":"17500"
   }
 ]

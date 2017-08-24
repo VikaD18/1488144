@@ -5,11 +5,9 @@ angular.module('myApp.view1')
         $scope.addItem=function (item) {
             Shop.addOrder(item);
         };
-        Shop.getAllItems();
-}])
-    .controller('View1ACtrl', [function() {
+        $scope.phones=[];
+        Shop.getAllItems().then(function (_items) {
+            $scope.phones=_items;
 
-    }])
-    .controller('View1A1Ctrl', ['$scope','Shop',function($scope,Shop) {
-
-    }]);
+        });
+}]);
