@@ -8,5 +8,3 @@ angular.module('myApp.view1', ['ngRoute', 'shop'])
     controller: 'View1Ctrl'
   });
 }])
-
-;

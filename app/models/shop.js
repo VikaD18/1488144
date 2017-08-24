@@ -5,7 +5,7 @@ angular.module('shop', [] )
         function Shop() {
            console.log('constructor') ;
         }
-        Shop.prototype.getOrders=function() {
+      /*  Shop.prototype.getOrders=function() {
             return orders;
         };
         Shop.prototype.addOrders=function(order) {
@@ -30,7 +30,7 @@ angular.module('shop', [] )
             },function errorCallback(response) {
                console.error(response);
             });
-        };
+        };*/
         return new Shop();
     }])
     .factory('Phones', [function() {
