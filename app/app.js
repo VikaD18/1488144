@@ -5,6 +5,7 @@ angular.module('myApp', [
     'myApp.view1',
     'myApp.view2',
     'myApp.version',
+
     'ngMaterial'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {

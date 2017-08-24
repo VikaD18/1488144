@@ -18,12 +18,12 @@
 </head>
 <body>
 <md-content class="md-padding">
-  <md-nav-bar
-          md-selected-nav-item="currentNavItem"
-          nav-bar-aria-label="navigation links">
-    <md-nav-item md-nav-href="#!" name="home">Home</md-nav-item>
-    <md-nav-item md-nav-href="#!/view1" name="view1">view1</md-nav-item>
-    <md-nav-item md-nav-href="#!/view2" name="view2">view2</md-nav-item>
+  <md-nav-bar>
+  <md-nav-item md-nav-href="#!/" name="home">Главная</md-nav-item>
+    <md-nav-item md-nav-href="#!/view1" name="view1">iPhone</md-nav-item>
+    <md-nav-item md-nav-href="#!/view2" name="view2">Samsung</md-nav-item>
+    <md-nav-item md-nav-href="#!/view2" name="login">Вход</md-nav-item>
+    <md-nav-item md-nav-href="#!/registration" name="registration">Регистрация</md-nav-item>
     <!-- these require actual routing with ui-router or ng-route, so they won't work in the demo
     <md-nav-item md-nav-href="#page4" name="page5">Page Four</md-nav-item>
     <md-nav-item md-nav-sref="app.page5" name="page4">Page Five</md-nav-item>
@@ -37,11 +37,7 @@
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
-
 <div ng-view></div>
-
-<div>Angular seed app: v<span app-version></span></div>
-
 <!-- In production use:
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
 -->
@@ -51,11 +47,14 @@
 <script src="bower_components/angular-material/angular-material.js"></script>
 <script src="bower_components/angular-route/angular-route.js"></script>
 <script src="models/shop.js"></script>
+<script src="models/samsung.js"></script>
+
 <script src="directives/phone.js"></script>
 <script src="app.js"></script>
 <script src="view1/view1.js"></script>
 <script src="view1/view1.controller.js"></script>
 <script src="view2/view2.js"></script>
+<script src="view2/view2.controller.js"></script>
 <script src="components/version/version.js"></script>
 <script src="components/version/version-directive.js"></script>
 <script src="components/version/interpolate-filter.js"></script>

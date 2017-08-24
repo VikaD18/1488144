@@ -6,21 +6,13 @@
                         <span class="md-headline">{{item.title}}</span>
                         <span class="md-subhead">{{item.color}}</span>
                         <span class="md-subhead">{{item.price}}</span>
+
                     </md-card-title-text>
                 </md-card-title>
                 <md-card-content layout="row" layout-align="space-between">
                     <div class="md-media-xl card-media">
-                    <img ng-src="{{item.image}}" class="md-card-image"  >
+                    <img ng-src="images/{{item.color}}.jpg" class="md-card-image"  style="height: 100%" alt="" >
                     </div>
-                        <md-card-actions layout="column">
-                        <md-button class="md-icon-button" aria-label="Favorite">
-                            <md-icon class="material-icons md-accent">favorite</md-icon>
-                        </md-button>
-                        <md-button class="md-icon-button" aria-label="Settings">
-                            <md-icon class="material-icons md-primary">add_shopping_cart</md-icon>
-                        </md-button>
-
-                    </md-card-actions>
                 </md-card-content>
             </md-card>
         </md-grid-tile>

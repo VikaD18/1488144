@@ -1,6 +1,6 @@
-angular.module('myApp.view1')
-    .controller('View1Ctrl', ['$scope','Shop','Phone',function($scope, Shop,Phone) {
-    $scope.home="home";
+angular.module('myApp.view2')
+    .controller('View2Ctrl', ['$scope','Shop','Phone',function($scope, Shop,Phone) {
+        $scope.home="home";
 
         $scope.addItem=function (item) {
             Shop.addOrder(item);
@@ -10,4 +10,4 @@ angular.module('myApp.view1')
             $scope.phones=_items;
 
         });
-}]);
+    }]);
