@@ -1,5 +1,5 @@
 angular.module('myApp.view1')
-    .constroller('View1Ctrl', ['$scope',function ($scope) {
+    .constroller('View1Ctrl', ['$scope','Shop',function ($scope,Shop) {
         $scope.kuku="kuku";
     }]);
 /*.controller('View1Ctrl', ['$scope','Phones','Shop',function ($scope,Phones,Shop) {
