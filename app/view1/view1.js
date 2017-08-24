@@ -7,4 +7,4 @@ angular.module('myApp.view1', ['ngRoute', 'shop'])
     templateUrl: 'view1/view1.html',
     controller: 'View1Ctrl'
   });
-}])
+}]);
