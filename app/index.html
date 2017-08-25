@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My AngularJS App</title>
+  <title>My shop</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -14,36 +14,18 @@
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
   <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
   <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="css/style.css">
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
 
 <md-content class="md-padding">
-  <div class="panel-top">
-    <div class="center clearfix">
-      <div class="social">
-        <a href="#" class="s-fb">&nbsp;</a>
-        <a href="#" class="s-dribble">&nbsp;</a>
-        <a href="#" class="s-tw">&nbsp;</a>
-        <a href="#" class="s-mail">&nbsp;</a>
-        <a href="#" class="s-vimeo">&nbsp;</a>
-      </div>
-      <div class="basket">
-        <a href="#"><span>Cart (2)</span></a>
-      </div>
-      <div class="login">
-        <a href="#">Login</a>
-        <span>/</span>
-        <a href="#">Register</a>
-      </div>
-    </div>
-  </div>
   <md-nav-bar>
   <md-nav-item md-nav-href="#!/" name="home">Главная</md-nav-item>
     <md-nav-item md-nav-href="#!/view1" name="view1">iPhone</md-nav-item>
     <md-nav-item md-nav-href="#!/view2" name="view2">Samsung</md-nav-item>
     <md-nav-item md-nav-href="login/login.html" name="login">Вход</md-nav-item>
-    <md-nav-item md-nav-href="#!/registration" name="registration">Регистрация</md-nav-item>
+    <md-nav-item md-nav-href="registration/registration.html" name="registration">Регистрация</md-nav-item>
     <!-- these require actual routing with ui-router or ng-route, so they won't work in the demo
     <md-nav-item md-nav-href="#page4" name="page5">Page Four</md-nav-item>
     <md-nav-item md-nav-sref="app.page5" name="page4">Page Five</md-nav-item>
@@ -58,6 +40,7 @@
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 <div ng-view></div>
+
 <!-- In production use:
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
 -->
@@ -68,7 +51,6 @@
 <script src="bower_components/angular-route/angular-route.js"></script>
 <script src="models/shop.js"></script>
 <script src="models/samsung.js"></script>
-
 <script src="directives/phone.js"></script>
 <script src="app.js"></script>
 <script src="view1/view1.js"></script>
