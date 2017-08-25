@@ -1,5 +1,58 @@
 /* app css stylesheet */
+.panel-top {
+  height: 33px;
+  border-top: 3px solid #CC3333;
+  background: #2A2B2C;
+}
+/* Социальные сети */
+.social {
+  float: left;
+  padding: 4px 0;
+}
+.social a {
+  display: inline-block;
+  height: 23px;
+  width: 23px;
+  vertical-align: middle;
+  background: url(images/sprite-social.png) no-repeat center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+.social a.s-fb {background-position: 0 0;}
+.social a.s-dribble {background-position: -23px 0;}
+.social a.s-tw {background-position: -46px 0;}
+.social a.s-mail {background-position: -69px 0;}
+.social a.s-vimeo {background-position: -92px 0;}
 
+/* Вход на сайт*/
+.login {
+  float: right;
+  padding-top: 7px;
+}
+.login a,
+.login span {color: #fff;}
+.login a:hover {text-decoration: underline;}
+
+/* Корзинка */
+.basket {
+  width: 90px;
+  float: right;
+  margin-left: 25px;
+  background: #C33 url(images/cart.png) no-repeat 8px 7px;
+  -webkit-border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+  -o-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+}
+.basket a {
+  display: block;
+  height: 45px;
+  padding: 15px 0 0 40px;
+  color: #fff;
+}
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
