@@ -1,17 +1,34 @@
+
 [
   {
     "title":"iPhone 6",
     "text":"хороший телефон",
     "color":"gold",
     "price":7500,
-    "image":"https://www.google.com.ua/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjP__LI1fDVAhVLSZoKHXNpBOAQjRwIBw&url=https%3A%2F%2Fpdalife.info%2Fv-tayvane-vyishel-novyiy-iphone-6-c-32-gb-po-tsene-435-2200p.html&psig=AFQjCNHavzDmy7je-cchNEdjcj2_8tLElQ&ust=1503691516951867"
+    "image":"white.jpg"
   },
   {
     "title":"iPhone 4",
     "text":"хороший телефон",
     "color":"white",
     "price":4500,
-    "image":"https://www.google.com.ua/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjP__LI1fDVAhVLSZoKHXNpBOAQjRwIBw&url=https%3A%2F%2Fpdalife.info%2Fv-tayvane-vyishel-novyiy-iphone-6-c-32-gb-po-tsene-435-2200p.html&psig=AFQjCNHavzDmy7je-cchNEdjcj2_8tLElQ&ust=1503691516951867"
-  }
+    "image":"white.jpg"
+  },
 
-]
+    {
+
+      "title":"Samsung Salaxy S5",
+      "text":"хороший телефон",
+      "color":"white",
+      "price":7500,
+      "image":"white.jpg"
+    },
+    {
+
+      "title":"Samsung Salaxy S8",
+      "text":"хороший телефон",
+      "color":"white",
+      "price":17500,
+      "image":"images/white.jpg"
+    }
+  ]

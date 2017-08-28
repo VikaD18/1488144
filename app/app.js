@@ -5,13 +5,12 @@ angular.module('myApp', [
     'myApp.view1',
     'myApp.view2',
     'myApp.version',
-
     'ngMaterial'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
     $locationProvider.hashPrefix('!');
     $routeProvider.when('/', {
-        template: 'home',
+
         controller: 'View1Ctrl'
     });
     $routeProvider.otherwise({redirectTo: '/'});

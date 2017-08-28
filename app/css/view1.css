@@ -1,0 +1,14 @@
+input{
+    width: 60%;
+    margin-bottom: 20px;
+
+}
+.tdItem{
+    padding: 10px;
+    cursor: default;
+    border-radius: 7px;
+}
+.righting  {
+    float: right; /* Выравнивание по правому краю  */
+    margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
+}

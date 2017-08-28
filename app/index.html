@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
   <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
   <link rel="stylesheet" href="app.css">
-  <link rel="stylesheet" href="css/style.css">
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
@@ -22,25 +21,65 @@
 <md-content class="md-padding">
   <md-nav-bar>
   <md-nav-item md-nav-href="#!/" name="home">Главная</md-nav-item>
-    <md-nav-item md-nav-href="#!/view1" name="view1">iPhone</md-nav-item>
-    <md-nav-item md-nav-href="#!/view2" name="view2">Samsung</md-nav-item>
-    <md-nav-item md-nav-href="login/login.html" name="login">Вход</md-nav-item>
-    <md-nav-item md-nav-href="registration/registration.html" name="registration">Регистрация</md-nav-item>
-    <!-- these require actual routing with ui-router or ng-route, so they won't work in the demo
-    <md-nav-item md-nav-href="#page4" name="page5">Page Four</md-nav-item>
-    <md-nav-item md-nav-sref="app.page5" name="page4">Page Five</md-nav-item>
-    You can also add options for the <code>ui-sref-opts</code> attribute.
-    <md-nav-item md-nav-sref="page6" sref-opts="{reload:true, notify:true}">
-      Page Six
-    </md-nav-item>
-    -->
+    <md-nav-item md-nav-href="#!/view1" name="view1">Телефоны</md-nav-item>
+    <md-nav-item md-nav-href="html/login.html" name="login">Вход</md-nav-item>
   </md-nav-bar>
 </md-content>
+<div id="leftmenu">
+  <ul>
+
+    <li><a href="#blockquote">Вход</a></li>
+    <li><a href="#">Регистрация</a></li>
+    <li><a href="#twitter">О сайте</a></li>
+    <li><a href="#social">Социальные сети</a></li>
+  </ul>
+</div>
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 <div ng-view></div>
 
+<div class="form">
+  <form action="new.php" method="post" name="auth" onsubmit="create_window()" >
+    <input type="text" name="name" value="" placeholder="Ваше имя">
+    <input type="text" name="surname" value="" placeholder="Ваша фамилия">
+    <input type="text" name="mail" value="" placeholder="Ваш e-mail">
+    <textarea name="kom" placeholder="Ваш комментарий"></textarea>
+    <input class = "send" type="submit" name="send" value="отправить">
+  </form>
+
+</div>
+<footer>
+  <div id="footer">
+    <div id="twitter">
+      <h3>О сайте</h3>
+      <p>Этот сайт - это ваш помощник при приготовлении еды. Приготовив наши блюда, вы приятно удивите себя и своих близких.
+      </p>
+    </div>
+    <div id="sitemap">
+      <h3>Меню сайта</h3>
+      <div>
+        <a href="#">Главная</a>
+        <a href="html/view1.html">Телефоны</a>
+
+      </div>
+    </div>
+    <div id="social">
+      <h3>Социальные сети</h3>
+      <a href="http://twitter.com/" class="social-icon twitter"></a>
+      <a href="http://facebook.com/" class="social-icon facebook"></a>
+      <a href="http://plus.google.com/" class="social-icon google-plus"></a>
+      <a href="http://vk.com/" class="social-icon-small vimeo"></a>
+      <a href="http://youtube.com/" class="social-icon-small youtube"></a>
+      <a href="http://flickr.com/" class="social-icon-small flickr"></a>
+      <a href="http://instagram.com/" class="social-icon-small instagram"></a>
+      <a href="/rss/" class="social-icon-small rss"></a>
+    </div>
+    <div id="Form">
+      <li><a href="#">ВВЕРХ</a></li>
+    </div>
+  </div>
+</footer>
 <!-- In production use:
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
 -->
@@ -50,7 +89,6 @@
 <script src="bower_components/angular-material/angular-material.js"></script>
 <script src="bower_components/angular-route/angular-route.js"></script>
 <script src="models/shop.js"></script>
-<script src="models/samsung.js"></script>
 <script src="directives/phone.js"></script>
 <script src="app.js"></script>
 <script src="view1/view1.js"></script>

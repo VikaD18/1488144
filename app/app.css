@@ -1,78 +1,228 @@
 /* app css stylesheet */
-.panel-top {
-  height: 33px;
-  border-top: 3px solid #CC3333;
-  background: #2A2B2C;
-}
-/* Социальные сети */
-.social {
-  float: left;
-  padding: 4px 0;
-}
-.social a {
-  display: inline-block;
-  height: 23px;
-  width: 23px;
-  vertical-align: middle;
-  background: url(images/sprite-social.png) no-repeat center;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-}
-.social a.s-fb {background-position: 0 0;}
-.social a.s-dribble {background-position: -23px 0;}
-.social a.s-tw {background-position: -46px 0;}
-.social a.s-mail {background-position: -69px 0;}
-.social a.s-vimeo {background-position: -92px 0;}
 
-/* Вход на сайт*/
-.login {
-  float: right;
-  padding-top: 7px;
-}
-.login a,
-.login span {color: #fff;}
-.login a:hover {text-decoration: underline;}
-
-/* Корзинка */
-.basket {
-  width: 90px;
-  float: right;
-  margin-left: 25px;
-  background: #C33 url(images/cart.png) no-repeat 8px 7px;
-  -webkit-border-radius: 0 0 10px 10px;
-  -moz-border-radius: 0 0 10px 10px;
-  -o-border-radius: 0 0 10px 10px;
-  border-radius: 0 0 10px 10px;
-  overflow: hidden;
-}
-.basket a {
+body{margin: 0;
+  padding:0px;
+  background-color:#FAFAFA;}
+.md-padding{
+  position: relative;
   display: block;
-  height: 45px;
-  padding: 15px 0 0 40px;
-  color: #fff;
+  width: 100%;
+  height: 70px;
+  margin: 0;
+
+  margin-bottom: 10px;
 }
-.menu {
+.md-padding md-nav-bar{
+  overflow: hidden;
+  width: 690px;
+  margin: 0 auto ;
+}
+.md-padding md-nav-bar li {
+  float:left;
+  list-style:none;
+  margin:0;
+  padding:0px;
+}
+.md-padding  li {
+  padding:2px 10px;
+
+  color:white;
+}
+.md-padding a {
+  display: block;
+  padding: 5px 15px;
+  font-size: 20px;
+  text-decoration:none;
+}
+.md-padding li a:hover{
+  padding:2px 5px;
+
+  background:white;
+  border:solid 1px;
+  color:black;
+}
+#leftmenu {
+  float:left;
+  width: 22%;
+  padding:auto;
+  border:thin inherit;
+  background-color: #ebebeb;
+  margin:auto;
+  line-height: 45px;
+}
+#leftmenu ul{
+  list-style:none;
+  margin:10px 15px;
+  padding:2px;
+}
+#leftmenu li a{
+  text-decoration:none;
+  color:#191970;
+}
+#leftmenu a{
+  padding:0 2px ;
+  font-size: 20px;
+}
+.inputdemoErrorsAdvanced {
+  /* Setup animations similar to the ng-messages */ }
+.inputdemoErrorsAdvanced .hint {
+  /* Position the hint */
+  position: absolute;
+  left: 2px;
+  right: auto;
+  bottom: 7px;
+  /* Copy styles from ng-messages */
+  font-size: 12px;
+  line-height: 14px;
+  transition: all 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
+  /* Set our own color */
+  color: grey; }
+.inputdemoErrorsAdvanced .hint.ng-hide,
+.inputdemoErrorsAdvanced .hint.ng-enter,
+.inputdemoErrorsAdvanced .hint.ng-leave.ng-leave-active {
+  bottom: 26px;
+  opacity: 0; }
+.inputdemoErrorsAdvanced .hint.ng-leave,
+.inputdemoErrorsAdvanced .hint.ng-enter.ng-enter-active {
+  bottom: 7px;
+  opacity: 1; }
+#form {
+  float: right;
+  margin-top: 20px;
+  font-size: 10px;
+  text-align: right;
+}
+.form form{
+  margin: 0px;
+  display: block;
+  width: 734px;
+  padding: 10px 300px;
+}
+.form form input{
+  display: block;
+  width: 50%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  height: 50px;
+}
+.form form input.send{
+  width: 120px;
+  background: red;
+}
+.form form textarea{
+  display: block;
+  width: 50%;
+  margin-bottom: 10px;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  color: black;
+}
+footer {
+  background-color: #ebebeb;
+  color: #004A82;
+  font-size: 13px;
+}
+#footer {
+  max-width: 950px;
+  margin: 0 70px;
+  padding: 20px 0;
+  height: 90px;
+}
+footer h3 {
+  font: 14px 'Oswald', sans-serif;
+  color: #191970;
+  border-bottom: 1px solid #004A82;
+  margin: 0 0 10px 0;
+}
+#twitter time a {
+  color: #191970;
+}
+#twitter {
+  float: left;
+  width: 300px;
+}
+#twitter p {
+  padding-right: 15px;
+}
+footer a {
+  color: #191970;
+}
+#sitemap {
+  width: 150px;
+  float: left;
+  margin-left: 20px;
+  padding-right: 15px;
+}
+#sitemap div {
+  display: inline-block;
+}
+#sitemap a {
+  display: block;
+  text-decoration: none;
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+#sitemap a:hover {
+  text-decoration: underline;
+}
+#social {
+  float: left;
+  margin-left: 20px;
+  width: 130px;
+}
+.social-icon {
+  width: 30px;
+  height: 30px;
+  background: url(../picture/social.png) no-repeat;
+  display: inline-block;
+  margin-right: 10px;
+}
+.social-icon-small  {
+  width: 16px;
+  height: 16px;
+  background: url(../picture/social-small.png) no-repeat;
+  display: inline-block;
+  margin: 5px 6px 0 0;
+}
+.twitter {
+  background-position: 0 0;
+}
+.facebook {
+  background-position: -30px 0;
+}
+.google-plus {
+  background-position: -60px 0;
+}
+.vimeo {
+  background-position: 0 0;
+}
+.youtube {
+  background-position: -16px 0;
+}
+.flickr {
+  background-position: -32px 0;
+}
+.instagram {
+  background-position: -48px 0;
+}
+.rss {
+  background-position: -64px 0;
+}
+
+#Form {
+  float: right;
+  margin-top: 30px;
+  text-align: right;
   list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
 }
-
-.menu:before {
-  content: "[";
+#Form a{
+  text-decoration: none;
+  font-size: 25px;
 }
-
-.menu:after {
-  content: "]";
-}
-
-.menu > li {
-  display: inline;
-}
-
-.menu > li + li:before {
-  content: "|";
-  padding-right: 0.3em;
-}
+#main{color: #00008B; padding: 20px; text-decoration:none;}
+#recipe{color: #00008B; padding: 20px; text-decoration:none;}
+#contact{color: #00008B; padding: 20px;text-decoration:none;}
+#multivarka{color:#00008B; padding: 20px;text-decoration:none;}
+#about{color: #00008B; padding: 20px;text-decoration:none; }
